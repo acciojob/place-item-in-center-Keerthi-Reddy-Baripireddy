@@ -3,13 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Place Item in Center</title>
+    <title>Centering with Flexbox</title>
+	<style>
+		
+.holder {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100vw;
+    height: 100vh; 
+    margin: 0; 
+    background-color: #f0f0f0; 
+}
+
+/* Style for item-1 */
+.item-1 {
+    width: 100px; /* Width of item-1 */
+    height: 100px; /* Height of item-1 */
+    background-color: red; /* Red background color */
+}
+
+	</style>
 </head>
 <body>
     <div class="holder">
-        <div class="item item-1">
-            Place me in center using flex
-        </div>
+        <div class="item-1"></div>
     </div>
 </body>
 </html>
